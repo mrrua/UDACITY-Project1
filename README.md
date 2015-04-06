@@ -16,7 +16,7 @@ INTRODUCTION
  
 INSTALLATION OF PYTHON
 -------------------------------------
- We will be using Pythong v2.7.9 for this Project so please ensure you have it installed. If you already do - you can skip this step. If you are not sure, or want to reinstall please continue.
+ We will be using Python v2.7.9 for this Project so please ensure you have it installed. If you already do - you can skip this step. If you are not sure, or want to reinstall please continue.
  
  1. Navigate to the Python webpage via your browser. The link is: http://python.org/downloads
  2. Select Python v2.7.9 and click to download whichever version you'd like (specifically around 32 vs 64 bit options due to your preference / machine). 
@@ -29,10 +29,10 @@ HOW TO RUN THE PYTHON PROJECT SCRIPT
  Now that you have Python running on your machine. Let continue by running our Project!
  
  1. Unzip the Project to any location of your choice on your machine.
- 2. Navigate to the file location which you unziped the Project files.
+ 2. Navigate to the file location which you unzipped the Project files.
  3. Open the folder "Project 1"
  4. You can view the files individually here if you'd like to take a look at the code directly, but to run the project Right-Click on "entertainment_center.py" and select "Edit in IDLE".
  5. When IDLE opens, hit F5 - OR - select "Run", then "Run Module".
-    IDLE will now lauch the compiler, build the HTML page, and open it in your browser (the HTML file is created within the folder the files were located).
+    IDLE will now launch the compiler, build the HTML page, and open it in your browser (the HTML file is created within the folder the files were located).
  6. You have launched Project 1!
  
