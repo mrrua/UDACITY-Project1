@@ -39,7 +39,7 @@ main_page_head = '''
             text-align: center;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: #FFA6AA;
             cursor: pointer;
         }
         .scale-media {
@@ -74,6 +74,12 @@ main_page_head = '''
               'frameborder': 0
             }));
         });
+        // Animate in the movies when the page loads
+        $(document).ready(function () {
+          $('row').hide().first().show("fast", function showNext() {
+            $(this).next("div").show("fast", showNext);
+          });
+        });
     </script>
 </head>
 '''
@@ -98,10 +104,10 @@ main_page_content = '''
     
     <!-- Main Page Content -->
     <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#"><b>Fresh Tomatoes Movie Trailers</b></a>
           </div>
         </div>
       </div>
@@ -121,9 +127,9 @@ movie_tile_content = '''
         <img src="{poster_image_url}" width="165" height="257">
     </div>
     <div class="col-md-8 movie-desc">
-        <h2>{movie_title}</h2>
-        <p>Plot:<br />{plot}</p>
-        <p>Release Date:<br />{release}</p>
+        <h2><b>{movie_title}</b></h2>
+        <p><b>Plot:</b><br />{plot}</p>
+        <p><b>Release Date:</b><br />{release}</p>
         <p><br /><br /><a href="{imdb_link}" target="_blank">IMDb</a></p>
     </div>
 </div>
